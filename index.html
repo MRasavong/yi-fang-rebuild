@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yi Fang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700">
+  <style>
+    /* Additional CSS to style the text overlay */
+    .image-overlay {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: PT Serif,serif;
+    }
+    .orange-box {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #F58F4E;
+      padding: 16px 33px;
+      border-radius: 5px;
+      color: white; /* Ensure text inside the box is white */
+      font-family: PT Serif,serif;
+    }
+    .orange-box:nth-child(3) {
+      top: 55%;
+    }
+    .navbar .nav-link {
+      color: white !important; /* Change navbar text color to white */
+      margin-left: 20px; /* Add margin between text */
+      font-size: 15px;
+      font-family: PT Serif,serif;
+    }
+    .navbar .bi-instagram, .navbar .bi-yelp, .navbar .bi-facebook {
+      color: white !important; /* Change social media icons' color to white */
+      font-size: 17px;
+    }
+
+    .navbar {
+      height: 127px; /* Set a fixed height for the navbar */
+    }
+    body, .navbar {
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+    .main-image-container {
+      height: 83vh; /* Set a fixed height for the main image container */
+      overflow: hidden; /* Hide overflow to crop the image */
+      position: relative; /* Set position to relative for absolute positioning */
+    }
+    .main-image {
+      width: 100%; /* Ensure full width */
+      position: absolute; /* Position the image absolutely */
+      top: 42%; /* Align the image to the top */
+      left: 50%; /* Align the image to the left */
+      transform: translate(-50%, -50%); /* Center the image */
+      z-index: -1; /* Move the image behind other content */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-black"> <!-- Changed navbar-light to navbar-dark and bg-light to bg-black -->
+  <div class="container">
+    <!-- Yi Fang Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://images.squarespace-cdn.com/content/v1/60b9aac6db05c0353c938ddb/b2a1b9b8-42e4-4d29-8724-a03487c5198b/LOGO%28en%29-02.jpg?format=1500w" alt="Yi Fang Logo" style="max-height: 100px;">
+    </a>
+    <!-- End Yi Fang Logo -->
+
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Join Our Team</a></li>
+      <li class="nav-item" style="margin-right: 45px;"><a class="nav-link" href="#">Catering</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-instagram"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-yelp"></i></a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-facebook"></i></a></li>
+    </ul>
+  </div>
+</nav>
+<!--Main Image-->
+<div class="main-image-container">
+  <img class="main-image" src="https://images.squarespace-cdn.com/content/v1/60b9aac6db05c0353c938ddb/4ffe1c34-e4bb-4836-b80a-83b6599165e9/%E4%B8%80%E8%8A%B3%E6%B0%B4%E6%9E%9C%E8%8C%B6-Yifang+Fruit+Tea.jpg" alt="lone man">
+  <div class="image-overlay">YiFang Fruit Tea Hawaii</div>
+  <div class="orange-box">Online Ordering (Fort Street Mall Store)</div>
+  <div class="orange-box">Online Ordering (Keeaumoku Store)</div>
+</div>
+</body>
+</html>
